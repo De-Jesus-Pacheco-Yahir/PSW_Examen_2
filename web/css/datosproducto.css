@@ -1,0 +1,97 @@
+.dp-con{
+    width: 70%;
+    background-color: rgba(141, 84, 18, 0.4);
+    height: 25rem;
+    margin: auto;
+    border-color: rgba(194, 140, 60, 0.63);
+    border-radius: 2rem;
+    padding: 5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.columnas{
+    overflow: hidden;
+}
+
+.izq{
+    width: 30%;
+    float: left;
+}
+
+.enm{
+    width: 30%;
+    float: left;
+}
+
+.der{
+    width: 30%;
+    float: right;
+}
+
+.con_usu{
+    position: relative;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid rgb(255, 239, 20);
+}
+
+.con_usu input{
+    padding: 0.5px;
+    height: 1.2rem;
+    border: none;
+    background: rgb(255, 248, 211);
+    outline: none;
+}
+
+.con_usu label{
+    position: absolute;
+    color: rgb(180, 114, 39);
+    top: 50%;
+    left: 30px;
+    transform: translateY(-35%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.con_usu input:focus ~ label,
+.con_usu input:valid ~ label{
+    color: rgb(255, 248, 211);
+}
+a{
+    text-decoration-line: none;
+    line-height: 0rem;
+}
+a:hover{
+    background-color:rgba(255, 255, 255, 0);
+}
+
+#pnombre{
+    width: 40rem;
+}
+
+.Titulo{
+    align-items: center;
+    text-align: center;
+}
+
+.tamanio{
+    padding-bottom: 1.2rem;
+}
+
+.elementos{
+    overflow: hidden;
+}
+
+.regresar{
+    width: 30%;
+    float: left;
+}
+
+.image{
+    padding-right: 21rem;
+    height: 5rem;
+    font-size: 2rem;
+    width: 65%;
+    float: right;
+}

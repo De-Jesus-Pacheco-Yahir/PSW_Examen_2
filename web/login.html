@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ben&Jerry's</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/IniciarS.css">
+
+    </head>
+
+    <body>
+    <main>
+        <div class="elementos">
+            <div class="regresar">
+                <a href="./index.html">
+                    <img src="./media/regresar.jpg" alt="regresar" title="regresar" height="90%">
+                </a>
+            </div>
+            <div class="image">
+                <img src="./media/Ben&Jerrys_Logo.jpg" alt="Ben & Jerry´s Logo" title="Ben & Jerry´s Logo" height="70%">
+            </div>
+        </div>
+        <div class="login">
+            <div class="formu">
+                <form method="post">
+                    <div class="con_usu">
+                        <input type="text" id='Usuario' required>
+                        <label>Usuario:</label>
+                    </div>
+                    <br>
+                    <div class="con_usu">
+                        <input type="password" id='Contrasenia' required>
+                        <label>Contraseña:</label>
+                    </div>
+                    <br>
+                        <input type="submit" onclick="return ValidarInicio()" value="Iniciar Sesión">
+                </form>
+            </div>
+            <div id="error">
+                
+            </div>
+        </div>
+    </main>
+    <script src="./JS/validar.js"></script>
+    </body>
+
+</html>

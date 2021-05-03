@@ -1,0 +1,32 @@
+.Titulo{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Elementos{
+    padding: 4rem;
+}
+
+.con_usu{
+    margin-bottom: 2rem;
+}
+
+button{
+    height: 2rem;
+}
+
+.elementos{
+    overflow: hidden;
+}
+
+.regresar{
+    width: 15%;
+    float: left;
+}
+
+.image{
+    width: 75%;
+    padding-right: 18rem;
+    height: 5rem;
+    float: right;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ben&Jerry's</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/registro.css">
+
+    </head>
+
+    <body>
+    <main>
+        <div class="elementos">
+            <div class="regresar">
+                <a href="./index.html">
+                    <img src="./media/regresar.jpg" alt="regresar" title="regresar" height="90%">
+                </a>
+            </div>
+            <div class="image">
+                <img src="./media/Ben&Jerrys_Logo.jpg" alt="Ben & Jerry´s Logo" title="Ben & Jerry´s Logo" height="70%">
+            </div>
+        </div>
+        <div class="login">
+            <div class="formu">
+                <form action="post">
+                    <div class="columnas">
+                        <div id="izq">
+                            <div class="con_usu">
+                                <input type="text" name="Direc" required>
+                                <label>Calle:</label>
+                            </div>
+                            <div class="con_usu">
+                                <input type="text" name="Numex" required>
+                                <label>Numero exterior:</label>
+                            </div>
+                            <div class="con_usu">
+                                <input type="text" name="Numin">
+                                <label>Numero Interior (opcional):</label>
+                            </div>
+                        </div>
+                        <div id="der">
+                            <div class="con_usu">
+                                <input type="text" name="Direc" required>
+                                <label>Delegacion:</label>
+                            </div>
+                            <div class="con_usu">
+                                <input type="text" name="Direc" required>
+                                <label>Estado:</label>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="boton">
+                            <input type="submit" onclick="ValidarRegistrob()" value="Registrarme">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./JS/validar.js"></script>
+    </body>
+</html>
