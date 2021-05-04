@@ -1,0 +1,158 @@
+
+body{
+    background: beige;
+    font-size: 16px;
+    font-family: 'ComicSans','Libre Baskerville', serif;
+}
+.elementos{
+    text-align: center;
+    align-items: center;
+}
+
+.image{
+    margin-bottom: 2rem;
+    width:  100%;
+}
+
+.regresar{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.pro-con{
+    background-color: rgba(141, 84, 18, 0.4);
+    width: 80%;
+    height: 25rem;
+    padding: 4rem;
+    margin: auto;
+    border-color: rgba(194, 140, 60, 0.63);
+    border-radius: 2rem;
+}
+
+.Arriba{
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.Descuento{
+    width: 100%;
+    height: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.con_usu{
+    margin-left: 27rem;
+    position: relative;
+    margin-bottom: 1rem;
+    width: 10rem;
+    border-bottom: 2px solid rgb(255, 239, 20);
+    align-items: center;
+    text-align: center;
+}
+
+.con_usu input{
+    padding: 0.5px;
+    border: none;
+    width: 10rem;
+    height: 2rem;
+    background: rgb(255, 248, 211);
+    outline: none;
+}
+
+.con_usu label{
+    position: absolute;
+    color: rgb(180, 114, 39);
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.con_usu input:focus ~ label,
+.con_usu input:valid ~ label{
+    color: rgb(255, 248, 211);
+}
+
+.products{
+    width: 45%;
+    height: 15rem;
+    float:left;
+}
+
+.posicion{
+    width: 45%;
+    float:right;
+    overflow: hidden;
+}
+
+#top button{
+    width: 100%;
+    height: 7rem;
+    background-color: rgb(121, 190, 255);
+    color: rgb(0, 89, 255);
+}
+
+#top button:hover{
+    background-color: rgb(0, 89, 255);
+    color: rgb(121, 190, 255);
+}
+
+#left button{
+    width: 47%;
+    height: 7rem;
+    float: left;
+    background-color: rgb(255, 163, 240);
+    color: rgb(255, 0, 200);
+}
+
+#left button:hover{
+    background-color: rgb(255, 0, 200);
+    color: rgb(255, 163, 240);
+}
+
+#right button{
+    width: 47%;
+    height: 7rem;
+    float: right;
+    background-color: rgb(255, 255, 184);
+    color: rgb(145, 111, 0);
+}
+
+#right button:hover{
+    background-color: rgb(145, 111, 0);
+    color: rgb(255, 255, 184);
+}
+
+button a{
+    color: white;
+    text-decoration-line: none ;
+}
+
+button a:hover{
+    color: rgb(255, 236, 202);
+}
+
+button{
+    background:rgb(53, 31, 5);
+    color:#fff;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: 4px;
+}
+
+button:hover{
+    background-color:rgb(163, 92, 6);
+}
+
+.aceptar{
+    align-items: center;
+    text-align: center;
+}
