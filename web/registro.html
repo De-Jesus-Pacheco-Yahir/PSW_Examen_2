@@ -9,7 +9,6 @@
         <title>Ben&Jerry's</title>
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./css/registro.css">
-        <link rel="icon" href="media/benicon">
 
     </head>
 
@@ -62,19 +61,22 @@
                                 <label>Telefono:</label>
                             </div>
                             <div class="con_usu">
-                                <input type="text" id='Tel' required>
+                                <input type="text" id='Cel' required>
                                 <label>Celular:</label>
                             </div>
                         </div>
                         <br>
                         <div class="boton">
-                            <input type="submit" onclick="ValidarRegistro()" value="Registrarme">
+                            <input type="submit" onclick="return ValidarRegistro()" value="Registrarme">
                         </div>
                     </div>
                 </form>
             </div>
+            <div id="error">
+                
+            </div>
         </div>
     </main>
-    <script src="./JS/validar.js"></script>
+    <script src="./JS/ValidarRegistro.js"></script>
     </body>
 </html>

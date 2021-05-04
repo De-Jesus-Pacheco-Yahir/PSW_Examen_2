@@ -12,7 +12,7 @@ function ValidarInicio(){
         mensajesError.push('Ingresa tu nombre');
     }
     
-    if(contrasenia === null || password === ''){
+    if(contrasenia === null || contrasenia === ''){
         mensajesError.push('Ingresa tu Contraseña');
     }
     
