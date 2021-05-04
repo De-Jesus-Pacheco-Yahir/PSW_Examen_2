@@ -1,0 +1,63 @@
+.login{
+    text-align: center;
+    padding: 0 0 20px 0;
+    box-sizing: border-box;
+}
+
+.con_usu{
+    position: relative;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgb(255, 239, 20);
+}
+
+.formu{
+    text-align: center;
+    padding: 5rem;
+
+}
+
+.con_usu input{
+    padding: 0.5px;
+    border: none;
+    background: rgb(255, 248, 211);
+    outline: none;
+}
+
+.con_usu label{
+    position: absolute;
+    color: rgb(180, 114, 39);
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.con_usu input:focus ~ label,
+.con_usu input:valid ~ label{
+    color: rgb(255, 248, 211);
+}
+a{
+    text-decoration-line: none;
+    line-height: 0rem;
+}
+a:hover{
+    background-color:rgba(255, 255, 255, 0);
+}
+
+.elementos{
+    overflow: hidden;
+}
+
+.regresar{
+    width: 15%;
+    float: left;
+}
+
+.image{
+    width: 75%;
+    padding-right: 18rem;
+    height: 5rem;
+    float: right;
+}

@@ -1,0 +1,111 @@
+.login{
+    text-align: center;
+    width: 70%;
+    padding: 0 0 20px 0;
+    box-sizing: border-box;
+}
+
+.columnas{
+    overflow: hidden;
+}
+
+#izq{
+    width: 45%;
+    float: left;
+}
+
+#der{
+    width: 45%;
+    float: right;
+}
+
+.boton{
+    width: 100%;
+}
+
+.con_usu{
+    position: relative;
+    height: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid rgb(255, 239, 20);
+}
+
+.con_date{
+    position: relative;
+    height: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid rgb(255, 239, 20);
+}
+
+.formu{
+    text-align: center;
+    padding: 5rem;
+
+}
+
+.con_usu input{
+    padding: 0.5px;
+    border: none;
+    background: rgb(255, 248, 211);
+    height: 1.5rem;
+    width: 15rem;
+    outline: none;
+}
+
+.con_date input{
+    padding: 0.5px;
+    border: none;
+    background: rgb(255, 248, 211);
+    height: 1.5rem;
+    width: 15rem;
+    outline: none;
+}
+
+.con_usu label{
+    position: absolute;
+    color: rgb(180, 114, 39);
+    top: 50%;
+    left: 30px;
+    transform: translateY(-100%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.con_date label{
+    color: rgb(140, 75, 0);
+}
+
+.con_usu input:focus ~ label,
+.con_usu input:valid ~ label{
+    color: rgb(255, 248, 211);
+}
+
+a{
+    text-decoration-line: none;
+    line-height: 0rem;
+}
+
+a:hover{
+    background-color:rgba(255, 255, 255, 0);
+}
+
+button{
+    height: 2rem;
+}
+
+.elementos{
+    overflow: hidden;
+}
+
+.regresar{
+    width: 15%;
+    float: left;
+}
+
+.image{
+    width: 75%;
+    padding-right: 18rem;
+    height: 5rem;
+    float: right;
+}

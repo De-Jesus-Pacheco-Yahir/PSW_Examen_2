@@ -1,0 +1,117 @@
+header{
+    overflow: hidden;
+    background-color: rgba(141, 84, 18, 0.4);
+    height: 3rem;
+    padding: 0.9rem;
+    text-align: center;
+}
+
+.navegation ul{
+    list-style: none;
+}
+
+.navegation ul li{
+    display: inline-block;
+}
+
+.navegation ul li a{
+    display: block;
+    color:rgb(53, 31, 5);
+    text-decoration-line: none ;
+    padding: 0.5rem 1rem;
+    transition: all 0.4 linear;
+    border-radius: 5px;
+}
+
+.navegation ul li a:hover{
+    background-color: rgba(72, 38, 0, 0.4);
+    color: rgb(255, 209, 153);
+}
+
+.logo{
+    float: left;
+    width: 20%;
+}
+
+.navegation{
+    float: right;
+    width: 70%;
+}
+
+.promocional{
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.Pro1{
+    width: 100%;
+    background-color: rgb(128, 62, 0);
+}
+
+.Pro2{
+    width: 50%;
+    float: left;
+    background-color: violet;
+}
+
+.Pro3{
+    width: 50%;
+    float: right;
+    background-color: rgb(255, 225, 52);
+}
+
+.informacion{
+    padding: 6rem;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(105, 154, 243);
+}
+
+footer h3{
+    background-color: rgb(255, 80, 176);
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+footer ul li{
+    display: block;
+}
+
+.Administracion{
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+}
+
+.admin-usu{
+    width: 45%;
+    float: left;
+}
+
+.admin-usu a:hover{
+    background-color: rgba(153, 50, 204, 0.207);
+}
+
+.admin-pro{
+    width: 45%;
+    float: right;
+}
+
+.admin-pro a:hover{
+    background-color: rgba(153, 50, 204, 0.207);
+}
+
+.admin-usu a{
+    color: rgb(55, 55, 55);
+    text-decoration-line: none ;
+}
+
+.admin-pro a{
+    color: rgb(55, 55, 55);
+    text-decoration-line: none ;
+}

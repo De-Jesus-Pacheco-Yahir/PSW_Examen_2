@@ -1,0 +1,96 @@
+body{
+    background: beige;
+    font-size: 16px;
+    font-family: 'ComicSans','Libre Baskerville', serif;
+}
+.elementos{
+    text-align: center;
+    align-items: center;
+}
+
+.image{
+    margin-bottom: 2rem;
+    width:  100%;
+}
+
+.regresar{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.pro-con{
+    background-color: rgba(141, 84, 18, 0.4);
+    width: 80%;
+    padding: 2rem;
+    margin: auto;
+    border-color: rgba(194, 140, 60, 0.63);
+    border-radius: 2rem;
+}
+
+.pro-con .aniadir{
+    align-items: right;
+    text-align: right;
+}
+ 
+.con-ani{
+    width: 100%;
+    align-items: right;
+    text-align: right;
+}
+
+.aniadir button{
+    height:5rem;
+    width: 5rem;
+    background:rgb(92, 157, 255);
+    border-radius: 50%;;
+}
+
+.producto-container{
+    background: rgb(255, 105, 193);
+    overflow: hidden;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 2%;
+    height: 5rem;
+    width: 90%;
+}
+
+.vinieta{
+    float: left;
+    width: 10%;
+    height: 80%;
+}
+
+.producto-container h2{
+    float: left;
+    width: 60%;
+    margin-top: 2rem;
+}
+
+.Editar{
+    width: 10%;
+    height: 80%;
+    float: right;
+}
+
+.Editar button{
+    height:5rem;
+    width: 5rem;
+    background:rgb(92, 157, 255);
+    border-radius: 50%;;
+}
+
+.Borrar{
+    width: 10%;
+    height: 80%;
+    float: right;
+}
+
+.Borrar button{
+    height:5rem;
+    width: 5rem;
+    background:rgb(92, 157, 255);
+    border-radius: 50%;;
+}
