@@ -1,5 +1,5 @@
-var usuario = document.getElementById(Usuario);
-var contrasenia = document.getElementById(Contrasenia);
+var usuario = document.getElementById('Usuario');
+var contrasenia = document.getElementById('Contrasenia');
 var error = document.getElementById('error');
 error.style.color = 'red';
 
@@ -8,11 +8,13 @@ function ValidarInicio(){
     
     var mensajesError = [];
     
-    if(usuario === null || usuario === ''){
-        mensajesError.push('Ingresa tu nombre');
+    if(usuario.value == null || usuario.value == ''){
+        mensajesError.push('Ingresa tu Usuario');
+    }else if(usuario.value.length >10){
+        mensajesError.push('El usuario no puede tener más de 10 caracteres');
     }
     
-    if(contrasenia === null || contrasenia === ''){
+    if(contrasenia.value === null || contrasenia.value === ''){
         mensajesError.push('Ingresa tu Contraseña');
     }
     

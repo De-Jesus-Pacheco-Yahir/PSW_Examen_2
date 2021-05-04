@@ -31,18 +31,21 @@
                     <br>
                     <form method="post">
                         <div class="con_usu">
-                            <input type="text" name="NEmpleado" required>
+                            <input type="text" id='NEmpleado' required>
                             <label>No. Empleado:</label>
                         </div>
                         <br>
                         <div class="con_usu">
-                            <input type="password" name="CAcceso" required>
+                            <input type="password" id='CAcceso' required>
                             <label>Código de acceso:</label>
                         </div>
                         <br>
-                        <input type="submit" onclick="ValidarRegistroc()" value="Registrarme">
+                        <input type="submit" onclick="return ValidarRegistro()" value="Registrarme">
                     </form>
                 </div>
+            <div id="error">
+                
+            </div>
             </div>
     </main>
     <script src="./JS/ValidarRegistroc.js"></script>
