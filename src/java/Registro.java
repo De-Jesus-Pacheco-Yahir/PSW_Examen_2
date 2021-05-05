@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -92,24 +87,24 @@ public class Registro extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             
-            String nom, appat, apmat, correo, ip, iph;
-            int edad, puerto, puertoh;
+            String nom, nombre, usuario, appat, apmat, contrasenia, nacimiento, calle, del, est, direccion;
+            int tel, cel, numex, numin;
             
-            nom = request.getParameter("nombre");
-            appat = request.getParameter("appat");
-            apmat = request.getParameter("apmat");
-            correo = request.getParameter("correo");
+            usuario = request.getParameter("Usuario");
+            nombre = request.getParameter("Nombre");
+            appat = request.getParameter("Appat");
+            apmat = request.getParameter("Apmat");
+            nacimiento = request.getParameter("Nacimiento");
+            contrasenia = request.getParameter("Contrasenia");
+            tel = Integer.parseInt(request.getParameter("Tel"));
+            cel = Integer.parseInt(request.getParameter("Cel"));
+            calle = request.getParameter("Calle");
+            numex = Integer.parseInt(request.getParameter("Numex"));
+            numin = Integer.parseInt(request.getParameter("Numin"));
+            del = request.getParameter("Del");
+            est = request.getParameter("Est");
             
-            edad = Integer.parseInt(request.getParameter("edad"));
-            
-            ip = request.getLocalAddr() ;
-            puerto = request.getLocalPort() ;
-            
-            iph = request.getRemoteAddr() ;
-            puertoh = request.getRemotePort() ;
-            
-            
-            
+            direccion = calle + ", " + numex + ", " + numin + ", " + del + ", " + est;
             
             
             try{
@@ -117,7 +112,7 @@ public class Registro extends HttpServlet {
                 
                 String q = "insert into Mregistro (nom_usu, appat_usu,"
                         + " apmat_usu, edad_usu, correo_usu)"
-                        + "values ('"+nom+"', '"+appat+"', '"+apmat+"', "+edad+", '"+correo+"')";
+                        + "values ('"+usuario+"', '"+nombre+"', '"+appat+"', '"+apmat+"', '"+nacimiento+"', '"+contrasenia+"', "+tel+", "+cel+", '"+direccion+"')";
                 
                 //ejecutar la sentencia
                 set.executeUpdate(q);
@@ -131,26 +126,9 @@ public class Registro extends HttpServlet {
             out.println("<head>");
             out.println("<title>Servlet Registro</title>");            
             out.println("</head>");
-            out.println("<body>"
-                    + "Tu nombre es: " + nom);
-            out.println("<br>"
-                    + "Tu apellido paterno es: " + appat
-                    + "<br>"
-                    + "Tu apellido materno es: " + apmat
-                    + "<br>"
-                    + "Tu edad es: " + edad
-                    + "<br>"
-                    + "Tu correo electronico es: " + correo) ;
-            out.println("<br>"
-                    + "IP Local :" + ip
-                    + "<br>"
-                    + "Puerto Local :" + puerto
-                    + "<br>"
-                    + "IP Remota :" + iph
-                    + "<br>"
-                    + "Puerto Remoto : " + puertoh );
+            out.println("<body>");
             out.println("<h1>Registro Exitoso</h1>"
-                    + "<a href='index.html'>Regresar a la pagina principal</a>");
+                    + "<a href='Principal.html'>Continuar</a>");
             out.println("</body>");
             out.println("</html>");
             

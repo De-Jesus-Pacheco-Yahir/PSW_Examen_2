@@ -1,6 +1,6 @@
 var calle = document.getElementById('Calle');
-var numex = document.getElementById('numex');
-var numin = document.getElementById('numin');
+var numex = document.getElementById('Numex');
+var numin = document.getElementById('Numin');
 var del = document.getElementById('Del');
 var est = document.getElementById('Est');
 var error = document.getElementById('error');
@@ -19,7 +19,7 @@ function ValidarRegistro(){
         mensajesError.push('El calle no puede tener más de 20 caracteres');
     }
     
-    if(numex.value === null || numex.value === ''){
+    if(Numex.value === null || Numex.value === ''){
         mensajesError.push('Ingresa tu Número Exterior');
     }else if(isNaN(numex.value)) {
         mensajesError.push('Utilice caracteres numericos en el campo Número exterior');
