@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -41,11 +46,11 @@ public class Registro extends HttpServlet {
     public void init(ServletConfig cfg) throws ServletException{
         
         //trazr ruta al servidor de la base de datos
-        String URL = "jdbc:mysql:3306//localhost/registro4iv8";
+        String URL = "jdbc:mysql:3306//localhost/examen";
         //driver:gestor:puerto//IP/nombrebasededatos
         
         String userName = "root";
-        String password = "HappyEduardo6759+-";
+        String password = "momokameo";
         
         
          try{
@@ -57,7 +62,7 @@ public class Registro extends HttpServlet {
             y eso se debe a que ya estegrado el puerto en el driver
             URL = "jdbc:mysql://localhost/registro4iv8";
             */
-            URL = "jdbc:mysql://localhost/registro4iv8";
+            URL = "jdbc:mysql://localhost/examen";
             con = DriverManager.getConnection(URL, userName, password);
             set = con.createStatement();
             System.out.println("Conexion exitosa");
@@ -87,32 +92,32 @@ public class Registro extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             
-            String nom, nombre, usuario, appat, apmat, contrasenia, nacimiento, calle, del, est, direccion;
-            int tel, cel, numex, numin;
+            String nom, usu, date, appat, apmat, contra,calle,delegacion,estado, direccion;
+            int  tel, cel,numex,numin,  nempleado,cacceso;
             
-            usuario = request.getParameter("Usuario");
-            nombre = request.getParameter("Nombre");
-            appat = request.getParameter("Appat");
-            apmat = request.getParameter("Apmat");
-            nacimiento = request.getParameter("Nacimiento");
-            contrasenia = request.getParameter("Contrasenia");
-            tel = Integer.parseInt(request.getParameter("Tel"));
-            cel = Integer.parseInt(request.getParameter("Cel"));
-            calle = request.getParameter("Calle");
-            numex = Integer.parseInt(request.getParameter("Numex"));
-            numin = Integer.parseInt(request.getParameter("Numin"));
-            del = request.getParameter("Del");
-            est = request.getParameter("Est");
-            
-            direccion = calle + ", " + numex + ", " + numin + ", " + del + ", " + est;
-            
+            nom = request.getParameter("nombre");
+            usu = request.getParameter("usuario");
+            date = request.getParameter("date");
+            appat = request.getParameter("appat");
+            apmat = request.getParameter("apmat");
+            contra = request.getParameter("contra");
+            tel = Integer.parseInt(request.getParameter("tel"));
+            cel = Integer.parseInt(request.getParameter("cel"));
+            calle = request.getParameter("calle");
+            numex= Integer.parseInt(request.getParameter("numex"));
+            numin= Integer.parseInt(request.getParameter("numin"));
+            delegacion = request.getParameter("delegacion");
+            estado = request.getParameter("estado");
+            nempleado = Integer.parseInt(request.getParameter("nempleado"));
+            cacceso = Integer.parseInt(request.getParameter("cacceso"));
+            direccion = calle + ", " + numex + ", " + numin + ", " + delegacion + ", " + estado;
             
             try{
                 
                 
-                String q = "insert into Mregistro (nom_usu, appat_usu,"
-                        + " apmat_usu, edad_usu, correo_usu)"
-                        + "values ('"+usuario+"', '"+nombre+"', '"+appat+"', '"+apmat+"', '"+nacimiento+"', '"+contrasenia+"', "+tel+", "+cel+", '"+direccion+"')";
+                String q = "insert into mregistro (usuario_usu, nombre_usu, appat_usu,"
+                        + " apmat_usu, date_usu, contra_usu, tel_usu, cel_usu, direccion_usu)"
+                        + "values ('"+usu+"', "+nom+"', '"+appat+"', '"+apmat+"', "+date+", '"+contra+",'"+tel+"',"+cel+"',"+direccion+"')";
                 
                 //ejecutar la sentencia
                 set.executeUpdate(q);
@@ -121,7 +126,7 @@ public class Registro extends HttpServlet {
                 
                 
             
-            out.println("<!DOCTYPE html>");
+           out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet Registro</title>");            
